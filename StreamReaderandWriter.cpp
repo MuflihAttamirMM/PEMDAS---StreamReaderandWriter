@@ -31,6 +31,8 @@ int main()
     //menutup file setelah penulisan selesai
     outfile.close();
 
+    //membuka file dalam mode membaca 
+    ifstream infile;
     //menunjuk ke sebuah file
     infile.open("contohfile.txt");
 
@@ -45,4 +47,7 @@ int main()
         //menutup file jika telah selesai
         infile.close();
     }
+     //kondisi jika file tidak ada
+    else cout << "Unable to open file";
+    return 0;
 }
